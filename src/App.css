@@ -1,38 +1,200 @@
 .App {
+  height: 100%;
+}
+
+.banner {
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: center;
+}
+
+.banner_comp {
+  margin: 2rem;
+}
+
+.banner_content>p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  width: fit-content;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.banner_content>h1>mark {
+  background: #FFB76B;
+  background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 5px solid #FF7C00;
+
+}
+
+
+.gred_text{
+  background: #FFB76B;
+  background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 5px solid #FF7C00;
+
+}
+
+.banner_content>h2 {
+  width: 80%;
+  color: #555;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.banner_content>h1 {
+  width: 80%;
+}
+
+.banner_img {
+  width: 100%;
+  border: 5px solid #FF7F04;
+  border-radius: 10px;
+}
+
+
+/**********************/
+
+.faq {
+  color: #fff;
+  padding: 1.2rem;
+  background: rgb(6, 11, 34);
+  background: radial-gradient(circle, rgba(6, 11, 34, 1) 0%, rgba(43, 40, 40, 1) 100%);
+}
+
+.faq_head>h1 {
+  font-size: 2.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.feature_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.faq_list_comp {
+  padding: 1rem;
+  border-radius: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  align-items: flex-start;
+  color: #ccc;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: rgb(6, 11, 34);
+  background: radial-gradient(circle, rgba(6, 11, 34, 1) 0%, rgba(43, 40, 40, 1) 100%);
+  margin: 1rem;
+
+}
+
+.faq_grid_comp {
+  margin: 2rem;
+  background-color: #FFFFFF1A;
+  padding: 2rem;
+  border: 1px solid #777;
+  border-radius: 10px;
+
+}
+
+.faq_grid_comp>img {
+  width: 100%;
+}
+
+
+/*********************test_grid *********/
+
+.test_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.test_grid_comp {
+  margin: 2rem;
+  background-color: #FFFFFF1A;
+  padding: 2rem;
+  border: 1px solid #777;
+  border-radius: 10px;
+}
+
+.faq_button {
+  cursor: pointer;
+}
+
+.faq_button>p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.faq_ques_ans>h6 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.faq_ques_ans>p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+
+/***********enroll_button*********************/
+
+
+.enroll_now {
+  background: rgb(6, 11, 34);
+  background: radial-gradient(circle, rgba(6, 11, 34, 1) 0%, rgba(43, 40, 40, 1) 100%);
+  position: fixed;
+  z-index: 1;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.enroll_button {
+  background-image: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+  margin: 10px;
+  padding:0.2rem 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
   color: white;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.enroll_button>p {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.enroll_button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/**************88footer***/
+
+.footer{
+  margin-bottom: 100px;
+  background: rgb(6, 11, 34);
+  background: radial-gradient(circle, rgba(6, 11, 34, 1) 0%, rgba(43, 40, 40, 1) 100%);
+  color: #fff;
+  padding: 2rem;
 }
