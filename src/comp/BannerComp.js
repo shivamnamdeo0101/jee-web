@@ -1,23 +1,26 @@
 import React from 'react'
-import "../App.css"
 
 function BannerComp() {
     return (
-        <div className='banner'>
-            
-            <div className='banner_comp'>
+
+        <div className='bannner'>
+            <div>
+                <h1 className="text_gradiant">Get Expert Guidance </h1>
+                <h1 className="text_white   "> Till Your College Admission</h1>
+
                 
-                <img className='banner_img' src="https://i.ytimg.com/vi/xyVfLxV08I0/maxresdefault.jpg" />
-            </div>
+                <img className='banner-img' src="https://i.ytimg.com/vi/xyVfLxV08I0/maxresdefault.jpg" alt="" />
+                <div class="banner_container">
+                    <div class="banner_content">
+                        <p className="banner_text"> You’ll learn the easiest method to sell digital products.
+                            Even a 14-year-old kid can successfully implement the new strategy and make more than 1 lakh/month on automation.</p>
+                    </div>
+                </div>
 
-            <div className='banner_comp banner_content'>
-                <p>RAJ KUMARZAIN , recently Enrolled in this courserecently Enrolled in this course</p>
-                <h1> Get<mark> Expert Guidance</mark>  Till Your College Admission</h1>
-                <h2>After running ads of 15 crores I ended up creating 5 hours of training which saves you Rs. 15 Crore.
-                    Say no to High CPP and start making a profit out of your Facebook ads campaigns.</h2>
             </div>
-
+            <button className="banner_button" onClick={()=>window.open("https://rzp.io/l/uSLGxMoM")}> Fill the form for counsling support</button>
         </div>
+
     )
 }
 

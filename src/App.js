@@ -1,26 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 import BannerComp from './comp/BannerComp';
+import CourseComp from './comp/CourseComp';
+import ExampComp from './comp/ExampComp';
 import FaqComp from './comp/FaqComp';
-import AboutComp from './comp/AboutComp';
-import TestimoComp from './comp/TestimoComp';
-import FeatureComp from './comp/FeatureComp';
-import FooterComp from './comp/FooterComp';
-import EnrollComp from './comp/EnrollComp';
+import EnrollNowComp from './comp/EnrollNowComp';
+
 
 function App() {
   return (
     <div className="App">
+      <BannerComp />
+      <CourseComp />
+      <ExampComp />
+      <FaqComp />
+      <EnrollNowComp />
 
-        <BannerComp />
-        <FeatureComp />
-        <AboutComp />
-        <TestimoComp />
-        <FaqComp />
-        
 
-        <EnrollComp />
-        <FooterComp />
     </div>
   );
 }

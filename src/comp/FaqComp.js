@@ -1,9 +1,10 @@
 import React from 'react'
-import FaqListComp from './FaqListComp'
+import FaqGridComp from './FaqGridComp'
 
 function FaqComp() {
 
-    const data = [
+
+    const li = [
         {
             "ques":"What is the process of counselling?",
             "ans":"After the completion of payment, our team will contact you within 24 hours."
@@ -13,7 +14,7 @@ function FaqComp() {
             "ans":"No, this is a non-refundable amount."
         },
         {
-            "ques":"What is your availability to provide support and guidance throughout the admission process?",
+            "ques":"What is your availability to provide support and guidance throughout the admission process? ",
             "ans":"We’re always available to you through chat/phone, till you get the admission in your desired college."
         },
         {
@@ -24,24 +25,25 @@ function FaqComp() {
 
 
     return (
-        <div>
-            <div className='faq_head'>
-                <h1>FAQ's</h1>
-            </div>
+        <div className="course_comp faq_comp">
+            <h1 className="text_gradiant">Some of the frequently asked questions </h1>
 
-            <div className='faq_grid'>
+            <div className="faq_row">
+
                 {
-                    data.map((item, index) => {
-                        return (
-                            <div className="faq_list">
-                                <FaqListComp item={item}/>
-                            </div>
+                    li.map((item,index)=>{
+                        return(
+                            <FaqGridComp item={item} index={index} />
                         )
                     })
                 }
+                
+
             </div>
+
         </div>
     )
 }
+
 
 export default FaqComp
