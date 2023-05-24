@@ -140,7 +140,7 @@
 .examp_comp_grid{
   padding:1% 20% 1% 20%;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   text-align: center;
   align-items: center;
 }
@@ -152,7 +152,6 @@
   }
 
   .examp_comp_grid {
-   
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     text-align: center;
@@ -267,7 +266,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  box-shadow: 0px 0px 180px 5px #FBDF93;
+  box-shadow: 0px 0px 180px 5px #fff;
   
 
 }
