@@ -26,7 +26,7 @@ function FaqComp() {
 
     return (
         <div className="course_comp faq_comp">
-            <h1 className="text_gradiant">Some of the frequently asked questions </h1>
+            <h1 className="text_yellow_gradiant">Some of the frequently asked questions </h1>
 
             <div className="faq_row">
 

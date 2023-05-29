@@ -8,22 +8,34 @@ function CourseComp() {
             <div className="course_row">
 
                 <div className="course_comp_grid">
-                    <p><i class="fa fa-check" aria-hidden="true"></i>
-                        Understanding the Demand of Market</p>
-                        <p><i class="fa fa-check" aria-hidden="true"></i>
-                        Unlimited Call Support</p>
-                    <p><i class="fa fa-check" aria-hidden="true"></i>
-                        Personalized Choice Filling By Our Expert Team</p>
+                    <div className='course_comp_row'>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>Understanding the Demand of Market</p>
+                    </div>
+                    <div className='course_comp_row'>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>Unlimited Call Support</p>
+                    </div>
+                    <div className='course_comp_row'>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>Personalized Choice Filling By Our Expert Team</p>
+                    </div>
 
+                    <div className='course_comp_row'>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>All Type Of College Admission Counselling Included</p>
+                    </div>
 
-                
-                    <p><i class="fa fa-check" aria-hidden="true"></i>
-                        All Type Of College Admission Counselling Included</p>
-                    
-                    <p><i class="fa fa-check" aria-hidden="true"></i>
-                        Scholarship Regarding Help In Your College</p>
-                    <p><i class="fa fa-check" aria-hidden="true"></i>
-                        24/7 WhatsApp Chat Availability</p>
+                    <div className='course_comp_row'>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>Scholarship Regarding Help In Your College</p>
+                    </div>
+
+                    <div className='course_comp_row'>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <p>24/7 WhatsApp Chat Availability</p>
+                    </div>
+
                 </div>
 
             </div>
